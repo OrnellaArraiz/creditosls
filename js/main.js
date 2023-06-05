@@ -2,7 +2,7 @@
 const interesFijo = 3
 
 //Interacción con usuario
-function calculaPrestamo() {
+function calcularPrestamo() {
 
     let monto = parseInt(prompt("Ingresa el monto que necesitas:"))
     let totalCuotas = parseInt(prompt("¿En cuántas cuotas? (hasta 24)"))
