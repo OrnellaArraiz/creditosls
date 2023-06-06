@@ -37,7 +37,7 @@ function iniciarCotizacion() {
                 console.log("Cuota " + (i + 1) + " USD$ " + desgloce.toFixed(2))
             }
     
-            const cotizadorCredito = new Cotizador(tipoCredito, interesFijo, cuotas, formaPago)
+            const cotizadorCredito = new Cotizador(tipoCredito, monto, interesFijo, totalCuotas)
             let valorCuotaMensual = cotizadorCredito.obtenerCotizacion()
             alert("✅ El costo mensual de su cuota de crédito es $ " + valorCuotaMensual.toFixed(2))
         }

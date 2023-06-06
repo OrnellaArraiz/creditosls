@@ -1,11 +1,11 @@
 class Cotizador {
-    constructor(tipoCredito, monto, interesFijo, cuotas) {
+    constructor(tipoCredito, monto, interesFijo, totalCuotas) {
         this.tipoCredito = tipoCredito
         this.monto = monto
         this.interesFijo = interesFijo
-        this.cuotas = cuotas
+        this.totalCuotas = totalCuotas
     }
     obtenerCotizacion() {
-        return this.monto * this.interesFijo * this.cuotas 
+        return this.monto * this.interesFijo * this.totalCuotas 
     }
 }
