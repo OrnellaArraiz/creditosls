@@ -1,4 +1,4 @@
-const interesFijo = 3
+const interesFijo = 2
 let tipoCredito = {}
 let monto = 0
 
@@ -41,3 +41,5 @@ function iniciarCotizacion() {
             let valorCuotaMensual = cotizadorCredito.obtenerCotizacion()
             alert("✅ El costo mensual de su cuota de crédito es $ " + valorCuotaMensual.toFixed(2))
         }
+
+        iniciarCotizacion()
