@@ -7,7 +7,7 @@ const credito = [{codigo: 1, tipo: "Personal", factor: 1.12},
                 {codigo: 3, tipo: "Salud", factor: 1.36}] 
 
 function iniciarCotizacion() {
-    codigo = prompt ("Ingresa el código numérico del crédito a solicitar: 1 - Personal, 2 - Hipotecario, 3 - Salud")
+    codigo = prompt ("Ingresa el número del crédito a solicitar: 1 - Personal, 2 - Hipotecario, 3 - Salud")
     tipoCredito = credito.find((credito)=> credito.codigo === parseInt(codigo))
     if (tipoCredito === undefined) {
         alert("⛔️ Error en el código ingresado.")
